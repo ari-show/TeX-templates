@@ -1,0 +1,27 @@
+name: Lint Thesis
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  lint:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install textlint
+        run: npm ci
+
+      - name: Run textlint
+        run: |
+          npx textlint --config .textlintrc -f checkstyle thesis.tex contents/**/*.tex > textlint-report.xml || \
+          (echo "textlint found errors. See textlint-report.xml" && cat textlint-report.xml && exit 1)
+
+      - name: Show lint errors in GitHub Actions logs
+        run: cat textlint-report.xml

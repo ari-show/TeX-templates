@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    "latex2e"
+  ],
+  "rules": {
+      "preset-ja-engineering-paper": {
+        "unify-kuten-and-touten": true
+      }
+  }
+}

@@ -1,0 +1,14 @@
+# prh-rules.yml
+rules:
+  - name: "半角カンマを全角カンマに"
+    pattern: ','
+    replace: '，'
+  - name: "半角ピリオドを全角ピリオドに"
+    pattern: '\.'
+    replace: '．'
+  - name: "全角読点（、）を強制"
+    pattern: '、'
+    replace: '，'
+  - name: "全角句点（。）を強制"
+    pattern: '。'
+    replace: '．'

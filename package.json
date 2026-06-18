@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "lint": "textlint --config .textlintrc thesis.tex contents/**/*.tex"
+  },
+  "dependencies": {
+    "textlint": "^15.7.1",
+    "textlint-plugin-latex2e": "^1.2.1",
+    "textlint-rule-preset-ja-engineering-paper": "^1.0.4"
+  }
+}

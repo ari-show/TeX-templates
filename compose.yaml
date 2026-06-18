@@ -1,0 +1,13 @@
+services:
+  texlive:
+    build: .
+    container_name: texlive-jp
+    volumes:
+      - ./:/work
+    working_dir: /work
+    # インタラクティブモードを維持
+    tty: true
+    stdin_open: true
+    # 環境変数の設定
+    environment:
+      - LANG=ja_JP.UTF-8
