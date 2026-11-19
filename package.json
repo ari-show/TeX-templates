@@ -6,5 +6,10 @@
     "textlint": "^15.8.0",
     "textlint-plugin-latex2e": "^1.2.1",
     "textlint-rule-preset-ja-engineering-paper": "^1.0.4"
+  },
+  "overrides": {
+    "textlint": {
+      "glob": "^14.0.2"
+    }
   }
 }
