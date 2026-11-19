@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:26.04
 
 # タイムゾーン設定（対話モード回避）
 ENV TZ=Asia/Tokyo
