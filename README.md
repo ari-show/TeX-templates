@@ -60,6 +60,12 @@ VS Code Dev Containers を使う場合は，開発コンテナに入った状態
 - latexmk
 - textlint
 
+## 依存関係の更新とセキュリティ
+
+Dependabot は npm パッケージ，GitHub Actions，Docker ベースイメージの更新を毎週確認し，更新用 PR を作成します．脆弱性のある依存関係は Dependabot alerts で検知し，修正可能な場合はセキュリティ更新 PR を作成します．
+
+GitHub Actions は PR，main ブランチへの push，毎週の定期実行で `npm audit --package-lock-only` を実行します．Dockerfile 内でインストールする apt パッケージや NodeSource のセットアップスクリプトは Dependabot の更新対象には含まれません．
+
 ## 参考文献
 
 文献は [ref.bib](./ref.bib) に記述します．
