@@ -3,7 +3,7 @@
     "lint": "textlint --config .textlintrc thesis.tex contents/**/*.tex"
   },
   "dependencies": {
-    "textlint": "^16.1.0",
+    "textlint": "^16.1.3",
     "textlint-plugin-latex2e": "^1.2.1",
     "textlint-rule-preset-ja-engineering-paper": "^1.0.4"
   },
